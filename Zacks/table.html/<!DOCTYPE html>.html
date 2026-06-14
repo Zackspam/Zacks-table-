@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Polished Table Layout</title>
+    <style>
+        :root {
+            color-scheme: light;
+            font-family: Arial, Helvetica, sans-serif;
+        }
+
+        body {
+            margin: 0;
+            min-height: 100vh;
+            display: grid;
+            place-items: center;
+            background: linear-gradient(135deg, #f4f7fb, #e6edf7);
+            color: #223;
+        }
+
+        .page {
+            width: min(96vw, 1100px);
+            padding: 24px;
+        }
+
+        table {
+            width: 100%;
+            border-collapse: collapse;
+            background: #fff;
+            box-shadow: 0 10px 30px rgba(17, 24, 39, 0.12);
+        }
+
+        td {
+            padding: 24px;
+            border: 3px solid #1f2937;
+            text-align: center;
+            vertical-align: middle;
+        }
+
+        .hero-row td {
+            height: 40vh;
+            background: #eef5ff;
+        }
+
+        .hero-box {
+            min-height: 220px;
+            border: 3px dashed #2563eb;
+            border-radius: 14px;
+            background: #fff;
+            padding: 18px;
+        }
+
+        .panel td {
+            border: 3px solid #ff7a00;
+            background: #fff7ef;
+            min-height: 30vh;
+        }
+
+        .label {
+            font-size: 1.1rem;
+            font-weight: 700;
+            color: #1f2937;
+            letter-spacing: 0.04em;
+            text-transform: uppercase;
+        }
+
+        .muted {
+            color: #4b5563;
+            font-size: 0.98rem;
+            margin-top: 8px;
+        }
+    </style>
+</head>
+<body>
+    <main class="page">
+        <table aria-label="Main layout table">
+            <tr class="hero-row">
+                <td>
+                    <div class="hero-box">
+                        <div class="label"></div>
+                        <p class="muted"></p>
+                    </div>
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <table aria-label="Content panel" class="panel-table">
+                        <tr>
+                            <td>
+                                <div class="label</div>
+                                <p class="muted"></p>
+                            </td>
+                        </tr>
+                    </table>
+                </td>
+            </tr>
+        </table>
+    </main>
+</body>
+</html>
